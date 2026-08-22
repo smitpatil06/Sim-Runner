@@ -1,0 +1,5 @@
+LOG_STDOUT        | warning | Start or stop time was overwritten, but no new integrator step size was provided.
+|                 | info    | | Re-calculating step size for 500 intervals.
+|                 | |       | | Use `-stepSize=<value>` to silence this warning.
+LOG_ASSERT        | debug   | Could not open sparsity pattern file TwoConnectedTanks_JacA.bin.
+
