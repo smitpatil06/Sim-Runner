@@ -82,3 +82,5 @@ python app.py
 * **Arguments:** Start/stop times are passed as `-startTime=X -stopTime=Y`.
 * **Exit Code 255:** `TwoConnectedTanks` returns exit code `255` on successful completion with warnings (e.g., missing sparsity file). `SimulationRunner.run()` explicitly treats `255` as success (with a "completed with warnings" message) to avoid a false failure popup on an otherwise-successful run.
 * **OS Dependencies:** The executable dynamically links several OpenModelica-specific libraries (e.g., `libSimulationRuntimeC.so`, the `libsundials_*` family) confirmed via `ldd`. These are not bundled in this repo — OpenModelica must be installed on the target machine (per Step 1 of the task).
+
+    The included TwoConnectedTanks binary was compiled on Linux (EndeavourOS/Arch). To run this application on Windows, the OpenModelica model must be recompiled on a Windows machine to generate the .exe equivalent, and the executable target in the GUI should be updated to point to TwoConnectedTanks.exe.
